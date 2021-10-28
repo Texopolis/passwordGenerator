@@ -18,15 +18,21 @@
         <div>
             <p>Number of lower case letters</p>
             <input id="inputLowerCase" type="number" oninput="getRandomLowerAlpha(numLowerCase.value)"></input>
-        </div><br>
-        <label for="inputUpperCase">Number of upper case letters</label>
-        <input id="inputUpperCase" type="number" oninput="getRandomUpperAlpha(numUpperCase.value)"></input><br>
-        <label for="inputNumbers">Number of numbers</label>
-        <input id="inputNumbers" type="number" oninput="getRandomNum(numNumbers.value)"></input><br>
-        <label for="inputSpecial">Number of special characters</label>
-        <input id="inputSpecial" type="number" oninput="getRandomSpecial(numSpecial.value)"></input><br>
+        </div>
+        <div>
+            <p>Number of upper case letters</p>
+            <input id="inputUpperCase" type="number" oninput="getRandomUpperAlpha(numUpperCase.value)"></input>
+        </div>
+        <div>
+            <p>Number of numbers</p>
+            <input id="inputNumbers" type="number" oninput="getRandomNum(numNumbers.value)"></input>
+        </div>
+        <div>
+            <p>Number of special characters</p>
+            <input id="inputSpecial" type="number" oninput="getRandomSpecial(numSpecial.value)"></input>
+        </div>
     </div>
-    <div id="container-output"></div>
+    <div id="container-output"> </div>
 
     <div class="buttons">
         <button class="ripple-btn" id="genRandom">GENERATE RANDOM</button>

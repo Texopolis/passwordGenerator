@@ -18,6 +18,7 @@ let special=''
 let newPass=''
 
 
+
 let getRandomLowerAlpha=(letters)=>{
   lowerAlpha=''
   for (let i=0; i<letters; i++) {
@@ -93,6 +94,7 @@ let allClear = ()=>{
 }
 
 let generateRandom = ()=>{
+  // btnOnClick(genRandom)
   allClear()
   getRandomLowerAlpha(6)
   getRandomUpperAlpha(2)
@@ -105,6 +107,10 @@ let generateRandom = ()=>{
   display()
 
 }
+
+// let btnOnClick=(buttonClicked)=>{
+//   buttonClicked.style.transform="scale(50%)"
+// }
 
 copy.addEventListener('click', async event => {
   if (!navigator.clipboard) {
@@ -121,37 +127,6 @@ copy.addEventListener('click', async event => {
 })
 
 clearBtn.addEventListener('click', allClear)
-genRandom.addEventListener('click', generateRandom)
+genRandom.addEventListener('click',  generateRandom)
 
-
-	// const rippleBtn = document.querySelector(".ripple-btn");
-
-	// Listen for click event
-	// rippleBtn.onclick = function (e) {
-
-	// 	// Create span element
-	// 	let ripple = document.createElement("span");
-
-	// 	// Add ripple class to span
-	// 	ripple.classList.add("ripple");
-
-	// 	// Add span to the button
-	// 	this.appendChild(ripple);
-
-	// 	// Get position of X
-	// 	let x = e.clientX - e.target.offsetLeft;
-
-	// 	// Get position of Y
-	// 	let y = e.clientY - e.target.offsetTop;
-
-	// 	// Position the span element
-	// 	ripple.style.left = `${x}px`;
-	// 	ripple.style.top = `${y}px`;
-
-	// 	// Remove span after 0.3s
-	// 	setTimeout(() => {
-	// 		ripple.remove();
-	// 	}, 300);
-
-	// };
 
