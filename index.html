@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lora|Ubuntu:400,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;700&family=Press+Start+2P&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <header> pAs$w0rd geN3rAT0r </header>
+    <div class="container-input">
+        <div>
+            <p>Number of lower case letters</p>
+            <input id="inputLowerCase" type="number" oninput="getRandomLowerAlpha(numLowerCase.value)"></input>
+        </div><br>
+        <label for="inputUpperCase">Number of upper case letters</label>
+        <input id="inputUpperCase" type="number" oninput="getRandomUpperAlpha(numUpperCase.value)"></input><br>
+        <label for="inputNumbers">Number of numbers</label>
+        <input id="inputNumbers" type="number" oninput="getRandomNum(numNumbers.value)"></input><br>
+        <label for="inputSpecial">Number of special characters</label>
+        <input id="inputSpecial" type="number" oninput="getRandomSpecial(numSpecial.value)"></input><br>
+    </div>
+    <div id="container-output"></div>
+
+    <div class="buttons">
+        <button class="ripple-btn" id="genRandom">GENERATE RANDOM</button>
+        <div class="copy-button">
+            <button class="ripple-btn" id="copy">  COPY PASSWORD</button>
+            <span id="tooltip">copied to clipboard</span>
+        </div>
+        <button class="ripple-btn" id="clearBtn">CLEAR</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
