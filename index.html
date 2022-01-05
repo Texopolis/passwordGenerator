@@ -13,35 +13,36 @@
 </head>
 
 <body>
-    <header> pAs$w0rd geN3rAT0r </header>
-    <div class="container-input">
-        <div>
-            <p>Number of lower case letters</p>
-            <input id="inputLowerCase" type="number" oninput="getRandomLowerAlpha(numLowerCase.value)">
+    <div class="wrapper">
+        <header> password generator </header>
+        <div class="container-input">
+            <div>
+                <p>Number of lower case letters</p>
+                <input id="inputLowerCase" type="number" oninput="getRandomLowerAlpha(numLowerCase.value)">
+            </div>
+            <div>
+                <p>Number of upper case letters</p>
+                <input id="inputUpperCase" type="number" oninput="getRandomUpperAlpha(numUpperCase.value)">
+            </div>
+            <div>
+                <p>Number of numbers</p>
+                <input id="inputNumbers" type="number" oninput="getRandomNum(numNumbers.value)">
+            </div>
+            <div>
+                <p>Number of special characters</p>
+                <input id="inputSpecial" type="number" oninput="getRandomSpecial(numSpecial.value)">
+            </div>
         </div>
-        <div>
-            <p>Number of upper case letters</p>
-            <input id="inputUpperCase" type="number" oninput="getRandomUpperAlpha(numUpperCase.value)">
+        <div id="container-output"> </div>
+        <div class="buttons">
+            <button class="glow-on-hover" id="genRandom">GENERATE RANDOM</button>
+            <div class="copy-button">
+                <button class="glow-on-hover" id="copy">  COPY PASSWORD</button>
+                <span id="tooltip">copied to clipboard</span>
+            </div>
+            <button class="glow-on-hover" id="clearBtn">CLEAR</button>
         </div>
-        <div>
-            <p>Number of numbers</p>
-            <input id="inputNumbers" type="number" oninput="getRandomNum(numNumbers.value)">
-        </div>
-        <div>
-            <p>Number of special characters</p>
-            <input id="inputSpecial" type="number" oninput="getRandomSpecial(numSpecial.value)">
-        </div>
+        <script src="index.js"></script>
     </div>
-    <div id="container-output"> </div>
-
-    <div class="buttons">
-        <button class="glow-on-hover" id="genRandom">GENERATE RANDOM</button>
-        <div class="copy-button">
-            <button class="glow-on-hover" id="copy">  COPY PASSWORD</button>
-            <span id="tooltip">copied to clipboard</span>
-        </div>
-        <button class="glow-on-hover" id="clearBtn">CLEAR</button>
-    </div>
-    <script src="index.js"></script>
 </body>
 </html>
