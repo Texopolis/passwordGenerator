@@ -1,2 +1,2 @@
 # passwordGenerator
- password generator with crytographically verifiable randomness
+ simple random password generator allowing user inputs and copy functionality
